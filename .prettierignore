@@ -1,0 +1,7 @@
+pnpm-lock.yaml
+
+*.md
+node_modules
+.vscode
+
+package*.json

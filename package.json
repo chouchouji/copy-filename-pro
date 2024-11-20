@@ -1,0 +1,92 @@
+{
+  "name": "copy-filename-pro",
+  "displayName": "Copy Filename Pro",
+  "description": "",
+  "version": "0.0.0",
+  "engines": {
+    "vscode": "^1.74.3"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "copy-filename-pro.copyFileNameWithExtension",
+        "title": "Copy FileName (With Extension)"
+      },
+      {
+        "command": "copy-filename-pro.copyFileNameNoExtension",
+        "title": "Copy Filename (No Extension)"
+      },
+      {
+        "command": "copy-filename-pro.copyDirectory",
+        "title": "Copy Directory"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "copy-filename-pro.copyFileNameWithExtension",
+          "when": "!explorerResourceIsFolder"
+        },
+        {
+          "command": "copy-filename-pro.copyFileNameNoExtension",
+          "when": "!explorerResourceIsFolder"
+        },
+        {
+          "command": "copy-filename-pro.copyDirectory",
+          "when": "explorerResourceIsFolder"
+        }
+      ],
+      "editor/title/context": [
+        {
+          "command": "copy-filename-pro.copyFileNameWithExtension",
+          "when": "!explorerResourceIsFolder"
+        },
+        {
+          "command": "copy-filename-pro.copyFileNameNoExtension",
+          "when": "!explorerResourceIsFolder"
+        }
+      ]
+    }
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm exec nano-staged --allow-empty",
+    "commit-msg": "pnpm exec vr commit-lint -p $1"
+  },
+  "nano-staged": {
+    "*.ts": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  },
+  "packageManager": "pnpm@9.1.1",
+  "scripts": {
+    "clean": "rimraf node_modules dist *.vsix",
+    "postinstall": "simple-git-hooks",
+    "package": "rimraf *.vsix && pnpm build && vsce package --no-dependencies",
+    "release": "vr release --skip-npm-publish",
+    "lint": "eslint . --fix",
+    "format": "prettier . --write",
+    "dev": "tsup --watch",
+    "build": "tsup"
+  },
+  "devDependencies": {
+    "@types/node": "20.x",
+    "@types/vscode": "^1.74.3",
+    "@typescript-eslint/eslint-plugin": "^8.10.0",
+    "@typescript-eslint/parser": "^8.7.0",
+    "@varlet/release": "^0.3.1",
+    "@vscode/vsce": "^3.2.1",
+    "eslint": "^9.13.0",
+    "nano-staged": "^0.8.0",
+    "prettier": "^3.3.3",
+    "rimraf": "^6.0.1",
+    "simple-git-hooks": "^2.11.1",
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.3"
+  }
+}
