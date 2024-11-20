@@ -13,6 +13,9 @@
 
 ## Usage
 
+![copy](https://github.com/user-attachments/assets/c58b2ec5-36d4-4e62-b3fc-c33b49abc792)
+
+
 ## Internationalization
 
 The default language is `english`. If you have added [chinese vscode extension](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-zh-hans) in vscode extensions, the language of `copy filename pro` extension will be changed to chinese automatically after restarting vscode.
