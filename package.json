@@ -1,7 +1,7 @@
 {
   "name": "copy-filename-pro",
   "displayName": "Copy Filename Pro",
-  "description": "",
+  "description": "Copy Filename And Directory",
   "version": "0.0.0",
   "engines": {
     "vscode": "^1.74.3"
@@ -9,21 +9,39 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "publisher": "chouchouji",
+  "author": {
+    "name": "chouchouji",
+    "email": "1305974212@qq.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chouchouji/copy-filename-pro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chouchouji/copy-filename-pro/issues"
+  },
+  "keywords": [
+    "extension",
+    "copy filename",
+    "copy directory"
+  ],
+  "homepage": "https://github.com/chouchouji/copy-filename-pro",
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
         "command": "copy-filename-pro.copyFileNameWithExtension",
-        "title": "Copy FileName (With Extension)"
+        "title": "%copyFileNameWithExtension%"
       },
       {
         "command": "copy-filename-pro.copyFileNameNoExtension",
-        "title": "Copy Filename (No Extension)"
+        "title": "%copyFileNameNoExtension%"
       },
       {
         "command": "copy-filename-pro.copyDirectory",
-        "title": "Copy Directory"
+        "title": "%copyDirectory%"
       }
     ],
     "menus": {
