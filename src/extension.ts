@@ -6,7 +6,7 @@ export function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(
     vscode.commands.registerCommand('copy-filename-pro.copyFileNameWithExtension', (uri: vscode.Uri) => {
       const fsPath = uri.fsPath;
-      fs.stat(fsPath, (err: NodeJS.ErrnoException | null, stats: fs.Stats) => {
+      fs.stat(fsPath, (err: NodeJS.ErrnoException | null) => {
         if (err) {
           vscode.window.showErrorMessage(err.message);
           return;
@@ -20,7 +20,7 @@ export function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(
     vscode.commands.registerCommand('copy-filename-pro.copyFileNameNoExtension', (uri: vscode.Uri) => {
       const fsPath = uri.fsPath;
-      fs.stat(fsPath, (err: NodeJS.ErrnoException | null, stats: fs.Stats) => {
+      fs.stat(fsPath, (err: NodeJS.ErrnoException | null) => {
         if (err) {
           vscode.window.showErrorMessage(err.message);
           return;
@@ -34,7 +34,7 @@ export function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(
     vscode.commands.registerCommand('copy-filename-pro.copyDirectory', (uri: vscode.Uri) => {
       const fsPath = uri.fsPath;
-      fs.stat(fsPath, (err: NodeJS.ErrnoException | null, stats: fs.Stats) => {
+      fs.stat(fsPath, (err: NodeJS.ErrnoException | null) => {
         if (err) {
           vscode.window.showErrorMessage(err.message);
           return;
