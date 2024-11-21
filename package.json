@@ -70,7 +70,27 @@
           "when": "!explorerResourceIsFolder"
         }
       ]
-    }
+    },
+    "keybindings": [
+      {
+        "command": "copy-filename-pro.copyFileNameWithExtension",
+        "key": "ctrl+shift+w",
+        "mac": "cmd+shift+w",
+        "when": "!explorerResourceIsFolder"
+      },
+      {
+        "command": "copy-filename-pro.copyFileNameNoExtension",
+        "key": "ctrl+shift+n",
+        "mac": "cmd+shift+n",
+        "when": "!explorerResourceIsFolder"
+      },
+      {
+        "command": "copy-filename-pro.copyDirectory",
+        "key": "ctrl+shift+d",
+        "mac": "cmd+shift+d",
+        "when": "explorerResourceIsFolder"
+      }
+    ]
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm exec nano-staged --allow-empty",

@@ -16,6 +16,29 @@
 
 ![copy](https://github.com/user-attachments/assets/c58b2ec5-36d4-4e62-b3fc-c33b49abc792)
 
+## Key Bindings
+
+The default keybindings of this extension are as follows
+
+```json
+{
+  "command": "copy-filename-pro.copyFileNameWithExtension",
+  "key": "ctrl+shift+w", // windows
+  "mac": "cmd+shift+w", // mac
+},
+{
+  "command": "copy-filename-pro.copyFileNameNoExtension",
+  "key": "ctrl+shift+n",
+  "mac": "cmd+shift+n",
+},
+{
+  "command": "copy-filename-pro.copyDirectory",
+  "key": "ctrl+shift+d",
+  "mac": "cmd+shift+d",
+}
+```
+
+If you want customize keybindings, just click `Setting` icon and `Keyboard Shortcuts`. Then you will see a page with search bar and keybinding list, input `copy-filename-pro` and search.
 
 ## Internationalization
 
