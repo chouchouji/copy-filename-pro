@@ -27,7 +27,7 @@ The default keybindings of this extension are as follows
   "mac": "cmd+shift+w", // mac
 },
 {
-  "command": "copy-filename-pro.copyFileNameNoExtension",
+  "command": "copy-filename-pro.copyFileNameWithoutExtension",
   "key": "ctrl+shift+n",
   "mac": "cmd+shift+n",
 },

@@ -1,5 +1,5 @@
 {
     "copyFileNameWithExtension": "复制文件名（含扩展名）",
-    "copyFileNameNoExtension": "复制文件名（无扩展名）",
+    "copyFileNameWithoutExtension": "复制文件名（无扩展名）",
     "copyDirectory": "复制目录名"
 }

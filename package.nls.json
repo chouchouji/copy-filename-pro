@@ -1,5 +1,5 @@
 {
     "copyFileNameWithExtension": "Copy FileName (With Extension)",
-    "copyFileNameNoExtension": "Copy Filename (No Extension)",
+    "copyFileNameWithoutExtension": "Copy Filename (No Extension)",
     "copyDirectory": "Copy Directory"
 }

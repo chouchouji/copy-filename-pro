@@ -18,7 +18,7 @@ export function activate(context: vscode.ExtensionContext) {
   );
 
   context.subscriptions.push(
-    vscode.commands.registerCommand('copy-filename-pro.copyFileNameNoExtension', (uri: vscode.Uri) => {
+    vscode.commands.registerCommand('copy-filename-pro.copyFileNameWithoutExtension', (uri: vscode.Uri) => {
       const fsPath = uri.fsPath;
       fs.stat(fsPath, (err: NodeJS.ErrnoException | null) => {
         if (err) {
