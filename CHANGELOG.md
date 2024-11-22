@@ -1,3 +1,12 @@
+## [0.1.1](https://github.com/chouchouji/copy-filename-pro/compare/v0.1.0...v0.1.1) (2024-11-22)
+
+
+### Bug Fixes
+
+* hidden commands in commandPalette ([d61a105](https://github.com/chouchouji/copy-filename-pro/commit/d61a1052a417d0cb534b5fdf63a09f6a095ad388))
+
+
+
 # [0.1.0](https://github.com/chouchouji/copy-filename-pro/compare/v0.0.4...v0.1.0) (2024-11-22)
 
 
