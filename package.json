@@ -46,6 +46,20 @@
       }
     ],
     "menus": {
+      "commandPalette": [
+        {
+          "command": "copy-filename-pro.copyFileNameWithExtension",
+          "when": "false"
+        },
+        {
+          "command": "copy-filename-pro.copyFileNameWithoutExtension",
+          "when": "false"
+        },
+        {
+          "command": "copy-filename-pro.copyDirectory",
+          "when": "false"
+        }
+      ],
       "explorer/context": [
         {
           "command": "copy-filename-pro.copyFileNameWithExtension",
