@@ -47,6 +47,10 @@
       {
         "command": "copy-filename-pro.copyPathWithoutExtension",
         "title": "%copyPathWithoutExtension%"
+      },
+      {
+        "command": "copy-filename-pro.copyRelativePathWithoutExtension",
+        "title": "%copyRelativePathWithoutExtension%"
       }
     ],
     "menus": {
@@ -66,6 +70,10 @@
         {
           "command": "copy-filename-pro.copyPathWithoutExtension",
           "when": "false"
+        },
+        {
+          "command": "copy-filename-pro.copyRelativePathWithoutExtension",
+          "when": "false"
         }
       ],
       "explorer/context": [
@@ -81,6 +89,11 @@
         },
         {
           "command": "copy-filename-pro.copyPathWithoutExtension",
+          "when": "!explorerResourceIsFolder",
+          "group": "navigation"
+        },
+        {
+          "command": "copy-filename-pro.copyRelativePathWithoutExtension",
           "when": "!explorerResourceIsFolder",
           "group": "navigation"
         },
@@ -103,6 +116,11 @@
         },
         {
           "command": "copy-filename-pro.copyFileNameWithoutExtension",
+          "when": "!explorerResourceIsFolder",
+          "group": "navigation"
+        },
+        {
+          "command": "copy-filename-pro.copyRelativePathWithoutExtension",
           "when": "!explorerResourceIsFolder",
           "group": "navigation"
         }
