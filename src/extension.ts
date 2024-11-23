@@ -16,6 +16,13 @@ export function activate(context: vscode.ExtensionContext) {
   );
 
   context.subscriptions.push(
+    vscode.commands.registerCommand('copy-filename-pro.copyPathWithoutExtension', (uri: vscode.Uri) => {
+      const { dir, name } = path.parse(uri.fsPath);
+      vscode.env.clipboard.writeText(path.join(dir, '/', name));
+    }),
+  );
+
+  context.subscriptions.push(
     vscode.commands.registerCommand('copy-filename-pro.copyDirectory', (uri: vscode.Uri) => {
       vscode.env.clipboard.writeText(path.basename(uri.fsPath));
     }),

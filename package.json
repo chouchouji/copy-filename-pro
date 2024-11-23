@@ -43,6 +43,10 @@
       {
         "command": "copy-filename-pro.copyDirectory",
         "title": "%copyDirectory%"
+      },
+      {
+        "command": "copy-filename-pro.copyPathWithoutExtension",
+        "title": "%copyPathWithoutExtension%"
       }
     ],
     "menus": {
@@ -58,30 +62,49 @@
         {
           "command": "copy-filename-pro.copyDirectory",
           "when": "false"
+        },
+        {
+          "command": "copy-filename-pro.copyPathWithoutExtension",
+          "when": "false"
         }
       ],
       "explorer/context": [
         {
           "command": "copy-filename-pro.copyFileNameWithExtension",
-          "when": "!explorerResourceIsFolder"
+          "when": "!explorerResourceIsFolder",
+          "group": "navigation"
         },
         {
           "command": "copy-filename-pro.copyFileNameWithoutExtension",
-          "when": "!explorerResourceIsFolder"
+          "when": "!explorerResourceIsFolder",
+          "group": "navigation"
+        },
+        {
+          "command": "copy-filename-pro.copyPathWithoutExtension",
+          "when": "!explorerResourceIsFolder",
+          "group": "navigation"
         },
         {
           "command": "copy-filename-pro.copyDirectory",
-          "when": "explorerResourceIsFolder"
+          "when": "explorerResourceIsFolder",
+          "group": "navigation"
         }
       ],
       "editor/title/context": [
         {
           "command": "copy-filename-pro.copyFileNameWithExtension",
-          "when": "!explorerResourceIsFolder"
+          "when": "!explorerResourceIsFolder",
+          "group": "navigation"
+        },
+        {
+          "command": "copy-filename-pro.copyPathWithoutExtension",
+          "when": "!explorerResourceIsFolder",
+          "group": "navigation"
         },
         {
           "command": "copy-filename-pro.copyFileNameWithoutExtension",
-          "when": "!explorerResourceIsFolder"
+          "when": "!explorerResourceIsFolder",
+          "group": "navigation"
         }
       ]
     },
