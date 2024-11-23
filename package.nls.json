@@ -2,6 +2,6 @@
     "copyFileNameWithExtension": "Copy FileName (With Extension)",
     "copyFileNameWithoutExtension": "Copy Filename (No Extension)",
     "copyDirectory": "Copy Directory",
-    "copyPathWithoutExtension": "Copy Path (Without Extension)",
-    "copyRelativePathWithoutExtension": "Copy Relative Path (Without Extension)"
+    "copyPathWithoutExtension": "Copy Path (No Extension)",
+    "copyRelativePathWithoutExtension": "Copy Relative Path (No Extension)"
 }

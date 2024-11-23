@@ -10,11 +10,18 @@
 
 - 📝 &nbsp;Support copying filename (with or no extension)
 - 📖 &nbsp;Support copying directory
+- 🌈 &nbsp;Support copying absolute or relative path (no extension)
 - 🌍 &nbsp;Support internationalization
 
 ## Usage
 
+### Copy Filename Or Directory
+
 ![copy](https://github.com/user-attachments/assets/c58b2ec5-36d4-4e62-b3fc-c33b49abc792)
+
+### Copy Path
+
+![path](https://github.com/user-attachments/assets/e61bf821-7a8a-4075-bcdf-db5f613eb621)
 
 ## Key Bindings
 
