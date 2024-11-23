@@ -1,3 +1,13 @@
+## [0.1.2](https://github.com/chouchouji/copy-filename-pro/compare/v0.1.1...v0.1.2) (2024-11-23)
+
+
+### Features
+
+* support getting path without extension ([3fc5cff](https://github.com/chouchouji/copy-filename-pro/commit/3fc5cff78bc7c72ff5937b6b07788ab7a8e553cd))
+* support getting relative path without extension ([7c2ff6a](https://github.com/chouchouji/copy-filename-pro/commit/7c2ff6a8a043001aa7e22de2129f1af1ea3f3ad8))
+
+
+
 ## [0.1.1](https://github.com/chouchouji/copy-filename-pro/compare/v0.1.0...v0.1.1) (2024-11-22)
 
 
