@@ -1,5 +1,5 @@
-import * as vscode from 'vscode';
 import path from 'node:path';
+import * as vscode from 'vscode';
 
 export function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(

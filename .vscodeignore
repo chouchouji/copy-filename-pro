@@ -2,12 +2,9 @@
 node_modules/**
 src/**
 .gitignore
-.yarnrc
 **/tsconfig.json
-**/eslint.config.mjs
 **/*.map
 **/*.ts
-.prettierignore
-prettier.config.mjs
 pnpm-lock.yaml
 *.github/**
+biome.json
