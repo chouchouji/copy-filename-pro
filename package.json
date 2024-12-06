@@ -3,7 +3,7 @@
   "displayName": "Copy Filename Pro",
   "description": "Copy Filename, Directory And Path",
   "icon": "resources/logo.png",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "engines": {
     "vscode": "^1.74.3"
   },
