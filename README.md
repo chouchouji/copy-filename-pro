@@ -1,7 +1,7 @@
 <div align="center">
   <img src="https://github.com/user-attachments/assets/90dc92f3-ef25-419d-8173-6d3dfe7c0e83" alt="logo" />
   <h1>Copy Filename Pro</h1>
-  <p>A vscode extension used to copy filename and directory</p>
+  <p>A vscode extension used to copy filename, directory and path</p>
 </div>
 
 ---

@@ -1,7 +1,7 @@
 {
   "name": "copy-filename-pro",
   "displayName": "Copy Filename Pro",
-  "description": "Copy Filename And Directory",
+  "description": "Copy Filename, Directory And Path",
   "icon": "resources/logo.png",
   "version": "0.1.2",
   "engines": {
