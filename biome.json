@@ -1,7 +1,7 @@
 {
   "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
   "vcs": { "enabled": false, "clientKind": "git", "useIgnoreFile": false },
-  "files": { "ignoreUnknown": false, "ignore": ["dist"] },
+  "files": { "ignoreUnknown": true, "ignore": ["dist", "package*.json"] },
   "formatter": {
     "enabled": true,
     "useEditorconfig": true,
@@ -9,10 +9,10 @@
     "indentStyle": "space",
     "indentWidth": 2,
     "lineEnding": "lf",
-    "lineWidth": 120,
+    "lineWidth": 80,
     "attributePosition": "auto",
     "bracketSpacing": true,
-    "ignore": ["pnpm-lock.yaml", "*.md", ".vscode", "package*.json"]
+    "ignore": []
   },
   "organizeImports": { "enabled": true },
   "linter": { "enabled": true, "rules": { "recommended": true } },
