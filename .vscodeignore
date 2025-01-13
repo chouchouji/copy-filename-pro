@@ -7,4 +7,6 @@ src/**
 **/*.ts
 pnpm-lock.yaml
 *.github/**
-biome.json
+.prettierignore
+eslint.config.mjs
+prettier.config.mjs

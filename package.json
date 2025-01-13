@@ -1,28 +1,11 @@
 {
   "name": "copy-filename-pro",
   "displayName": "Copy Filename Pro",
-  "description": "Copy Filename, Directory And Path",
-  "icon": "resources/logo.png",
   "version": "0.1.4",
-  "engines": {
-    "vscode": "^1.74.3"
-  },
+  "description": "Copy Filename, Directory And Path",
   "categories": [
     "Other"
   ],
-  "publisher": "chouchouji",
-  "author": {
-    "name": "chouchouji",
-    "email": "1305974212@qq.com"
-  },
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/chouchouji/copy-filename-pro.git"
-  },
-  "bugs": {
-    "url": "https://github.com/chouchouji/copy-filename-pro/issues"
-  },
   "keywords": [
     "extension",
     "copy filename",
@@ -30,7 +13,30 @@
     "copy path"
   ],
   "homepage": "https://github.com/chouchouji/copy-filename-pro",
+  "bugs": {
+    "url": "https://github.com/chouchouji/copy-filename-pro/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chouchouji/copy-filename-pro.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "chouchouji",
+    "email": "1305974212@qq.com"
+  },
+  "publisher": "chouchouji",
   "main": "./dist/extension.js",
+  "scripts": {
+    "build": "tsup",
+    "clean": "rimraf node_modules dist *.vsix",
+    "dev": "tsup --watch",
+    "format": "prettier --write .",
+    "postinstall": "simple-git-hooks",
+    "lint": "eslint --fix .",
+    "package": "rimraf *.vsix && pnpm build && vsce package --no-dependencies",
+    "release": "vr release --skip-npm-publish"
+  },
   "contributes": {
     "commands": [
       {
@@ -52,6 +58,26 @@
       {
         "command": "copy-filename-pro.copyRelativePathWithoutExtension",
         "title": "%copyRelativePathWithoutExtension%"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "copy-filename-pro.copyFileNameWithExtension",
+        "key": "ctrl+shift+w",
+        "mac": "cmd+shift+w",
+        "when": "!explorerResourceIsFolder"
+      },
+      {
+        "command": "copy-filename-pro.copyFileNameWithoutExtension",
+        "key": "ctrl+shift+n",
+        "mac": "cmd+shift+n",
+        "when": "!explorerResourceIsFolder"
+      },
+      {
+        "command": "copy-filename-pro.copyDirectory",
+        "key": "ctrl+shift+d",
+        "mac": "cmd+shift+d",
+        "when": "explorerResourceIsFolder"
       }
     ],
     "menus": {
@@ -126,57 +152,35 @@
           "group": "navigation"
         }
       ]
-    },
-    "keybindings": [
-      {
-        "command": "copy-filename-pro.copyFileNameWithExtension",
-        "key": "ctrl+shift+w",
-        "mac": "cmd+shift+w",
-        "when": "!explorerResourceIsFolder"
-      },
-      {
-        "command": "copy-filename-pro.copyFileNameWithoutExtension",
-        "key": "ctrl+shift+n",
-        "mac": "cmd+shift+n",
-        "when": "!explorerResourceIsFolder"
-      },
-      {
-        "command": "copy-filename-pro.copyDirectory",
-        "key": "ctrl+shift+d",
-        "mac": "cmd+shift+d",
-        "when": "explorerResourceIsFolder"
-      }
-    ]
+    }
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm exec nano-staged --allow-empty",
     "commit-msg": "pnpm exec vr commit-lint -p $1"
   },
   "nano-staged": {
-    "*.ts": [
-      "biome check --write"
+    "*.{ts,md}": [
+      "prettier --write"
     ]
   },
-  "packageManager": "pnpm@9.1.1",
-  "scripts": {
-    "clean": "rimraf node_modules dist *.vsix",
-    "postinstall": "simple-git-hooks",
-    "package": "rimraf *.vsix && pnpm build && vsce package --no-dependencies",
-    "release": "vr release --skip-npm-publish",
-    "check": "biome check --write --verbose",
-    "dev": "tsup --watch",
-    "build": "tsup"
-  },
   "devDependencies": {
-    "@biomejs/biome": "1.9.4",
+    "@configurajs/eslint": "^0.1.0",
+    "@configurajs/prettier": "^0.1.1",
     "@types/node": "20.x",
     "@types/vscode": "^1.74.3",
     "@varlet/release": "^0.3.2",
     "@vscode/vsce": "^3.2.1",
+    "eslint": "^9.18.0",
     "nano-staged": "^0.8.0",
+    "prettier": "^3.4.2",
     "rimraf": "^6.0.1",
     "simple-git-hooks": "^2.11.1",
     "tsup": "8.3.0",
     "typescript": "^5.6.3"
-  }
+  },
+  "packageManager": "pnpm@9.1.1",
+  "engines": {
+    "vscode": "^1.74.3"
+  },
+  "icon": "resources/logo.png"
 }

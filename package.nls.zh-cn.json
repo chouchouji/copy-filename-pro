@@ -1,7 +1,7 @@
 {
-    "copyFileNameWithExtension": "复制文件名（含扩展名）",
-    "copyFileNameWithoutExtension": "复制文件名（无扩展名）",
-    "copyDirectory": "复制目录名",
-    "copyPathWithoutExtension": "复制路径 (无扩展名)",
-    "copyRelativePathWithoutExtension": "复制相对路径 (无扩展名)"
+  "copyFileNameWithExtension": "复制文件名（含扩展名）",
+  "copyFileNameWithoutExtension": "复制文件名（无扩展名）",
+  "copyDirectory": "复制目录名",
+  "copyPathWithoutExtension": "复制路径 (无扩展名)",
+  "copyRelativePathWithoutExtension": "复制相对路径 (无扩展名)"
 }
