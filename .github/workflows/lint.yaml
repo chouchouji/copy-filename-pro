@@ -9,14 +9,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install pnpm
-        run: corepack enable && corepack prepare pnpm@9.x --activate
-
-      - name: Set node version to 18
-        uses: actions/setup-node@v3
+      - uses: pnpm/action-setup@v4
         with:
-          node-version: 18
-          cache: pnpm
+          version: 9
+
+      - name: Setup Node.js 18.x
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18.x
 
       - name: Install dependencies
         run: pnpm install --no-frozen-lockfile
