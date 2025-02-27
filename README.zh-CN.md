@@ -1,6 +1,10 @@
 <div align="center">
   <img src="https://github.com/user-attachments/assets/90dc92f3-ef25-419d-8173-6d3dfe7c0e83" alt="logo" />
   <h1>Copy Filename Pro</h1>
+    <p>
+    <span>中文介绍</span> | 
+    <a href="https://github.com/chouchouji/copy-filename-pro/blob/main/README.md">English</a>
+  </p>
   <p>用于复制文件名、目录和路径的vscode扩展</p>
 </div>
 
