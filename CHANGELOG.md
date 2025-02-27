@@ -1,3 +1,5 @@
+## [0.2.1](https://github.com/chouchouji/copy-filename-pro/compare/v0.2.0...v0.2.1) (2025-02-27)
+
 # [0.2.0](https://github.com/chouchouji/copy-filename-pro/compare/v0.1.4...v0.2.0) (2025-02-11)
 
 ## [0.1.4](https://github.com/chouchouji/copy-filename-pro/compare/v0.1.3...v0.1.4) (2024-12-25)
