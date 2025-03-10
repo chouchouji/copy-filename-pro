@@ -1,3 +1,9 @@
+# [0.3.0](https://github.com/chouchouji/copy-filename-pro/compare/v0.2.1...v0.3.0) (2025-03-10)
+
+### Features
+
+- support multiple select ([fb1a035](https://github.com/chouchouji/copy-filename-pro/commit/fb1a0351e1576e5f6ac7e1b1dbfc3ecf69312ede))
+
 ## [0.2.1](https://github.com/chouchouji/copy-filename-pro/compare/v0.2.0...v0.2.1) (2025-02-27)
 
 # [0.2.0](https://github.com/chouchouji/copy-filename-pro/compare/v0.1.4...v0.2.0) (2025-02-11)
