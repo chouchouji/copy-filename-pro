@@ -10,3 +10,4 @@ pnpm-lock.yaml
 .prettierignore
 eslint.config.mjs
 prettier.config.mjs
+cSpell.json
