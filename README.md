@@ -15,6 +15,7 @@
 - 📝 &nbsp;Support copying filename (with or no extension)
 - 📖 &nbsp;Support copying directory
 - 🌈 &nbsp;Support copying absolute or relative path (no extension)
+- 📦 &nbsp;Support multiple select
 - 🌍 &nbsp;Support internationalization
 
 ## Usage
@@ -26,6 +27,10 @@
 ### Copy Path
 
 ![path](https://github.com/user-attachments/assets/e61bf821-7a8a-4075-bcdf-db5f613eb621)
+
+### Multiple Select
+
+![multiple](https://github.com/user-attachments/assets/168115ed-87ca-4d82-91bc-fd5a18c0f086)
 
 ## Key Bindings
 
