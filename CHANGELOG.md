@@ -1,3 +1,9 @@
+## [0.3.1](https://github.com/chouchouji/copy-filename-pro/compare/v0.3.0...v0.3.1) (2026-02-07)
+
+### Bug Fixes
+
+- compact folders cannot copy the parent directory ([c33678f](https://github.com/chouchouji/copy-filename-pro/commit/c33678f6a4af72f46771240ff4ecda7fb8e492c3))
+
 # [0.3.0](https://github.com/chouchouji/copy-filename-pro/compare/v0.2.1...v0.3.0) (2025-03-10)
 
 ### Features
