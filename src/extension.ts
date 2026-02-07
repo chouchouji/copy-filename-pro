@@ -80,12 +80,13 @@ export function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(
     vscode.commands.registerCommand(
       'copy-filename-pro.copyDirectory',
-      (_uri: vscode.Uri, files?: Array<vscode.Uri>) => {
+      (uri: vscode.Uri, files?: Array<vscode.Uri>) => {
         if (isNonEmptyArray(files)) {
           const fileNames = files
             .filter((file) => fs.statSync(file.fsPath).isDirectory())
             .map((file) => path.basename(file.fsPath))
-          vscode.env.clipboard.writeText(fileNames.join('\n'))
+          const selectedDirectory = fs.statSync(uri.fsPath).isDirectory() ? path.basename(uri.fsPath) : undefined
+          vscode.env.clipboard.writeText(fileNames.length === 1 && selectedDirectory ? selectedDirectory : fileNames.join('\n'))
         }
       },
     ),
